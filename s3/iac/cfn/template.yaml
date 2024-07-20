@@ -1,0 +1,8 @@
+  AWSTemplateFormatVersion: "2010-09-09"
+  Description: 'Just a simple s3 bucket'
+  Resources: 
+    #https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html
+    S3Bucket:
+      Type: 'AWS::S3::Bucket'
+      #we dont even NEED to put a bucket name. AWS will just make you a random one.
+
