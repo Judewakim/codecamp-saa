@@ -13,3 +13,8 @@ aws s3api put-object --bucket meta-fun-jw-458496 --key hello.txt --body hello.tx
 ## Get metadata through head object
 
 aws s3api head-object --bucket meta-fun-jw-458496 --key hello.txt
+
+## Clean up
+
+aws s3 rm s3://meta-fun-jw-458496/hello.txt
+aws s3 rb s3://meta-fun-jw-458496
